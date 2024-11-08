@@ -1,3 +1,13 @@
+[build]
+  # The directory where the build files are located (adjust this path if needed)
+  publish = "build"
+  # Command to install dependencies and start the application
+  command = "pip install -r requirements.txt && python app.py"  # Adjust if your entry point is different
+
 [build.environment]
-  FLASK_ENV = "production"
+  # Specify the Python version you want Netlify to use
   PYTHON_VERSION = "3.9"
+
+[[plugins]]
+  # Plugin to ensure functions core is available (if you're using serverless functions)
+  package = "@netlify/plugin-functions-install-core"
