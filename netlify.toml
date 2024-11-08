@@ -1,0 +1,11 @@
+[build]
+  base = "/"
+  publish = "build"
+  functions = "functions"
+
+[build.environment]
+  FLASK_ENV = "production"
+  PYTHON_VERSION = "3.8"
+
+[functions]
+  node_bundler = "esbuild"
