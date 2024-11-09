@@ -6,7 +6,7 @@
 
 [build.environment]
   # Specify the Python version you want Netlify to use
-  PYTHON_VERSION = "3.9"
+  PYTHON_VERSION = "3.9.7"
 
 [[plugins]]
   # Plugin to ensure functions core is available (if you're using serverless functions)
